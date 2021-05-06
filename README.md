@@ -4,19 +4,7 @@ UX Developer Intern &amp; Web Developer Intern Challenge - Fall 2021
 
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#) [![React Badge](https://img.shields.io/badge/-Bootstrap-5555ff?style=for-the-badge&labelColor=black&logo=bootstrap&logoColor=5555ff)](#) 
 
 
 <!-- TABLE OF CONTENTS -->
@@ -48,9 +36,9 @@ UX Developer Intern &amp; Web Developer Intern Challenge - Fall 2021
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Topic:
-```sh
-Shopify has branched out into movie award shows and we need your help. Please build us an app to help manage our movie nominations for the upcoming Shoppies.
-```
+
+>Shopify has branched out into movie award shows and we need your help. Please build us an app to help manage our movie nominations for the upcoming Shoppies.
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 The Challenge:
@@ -119,9 +107,11 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+After installtion completed, use the following commander to start react app:
+```sh
+npm start
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- LICENSE -->
