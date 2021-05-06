@@ -39,7 +39,8 @@ Topic:
 
 >Shopify has branched out into movie award shows and we need your help. Please build us an app to help manage our movie nominations for the upcoming Shoppies.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<!-- <p align="center"><sup><i>Sign up page</i></sup></p> -->
 
 The Challenge:
 ```sh
