@@ -7,6 +7,7 @@ import Skeleton from 'react-loading-skeleton';
 export default function Details({details}) {
 
     return (
+        details &&
         <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div className="offcanvas-header">
                 <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">{details[0]?.Title}</h5>
@@ -16,7 +17,7 @@ export default function Details({details}) {
                 <div className="card mb-3" style={{ maxWidth: ' 540px' }}>
                     <div className="row g-0">
                         <div className="col-md-4" >
-                            <img src={details[0]?.Poster} alt="..." width='120px' height='auto' />
+                            <img src={details[0]?.Poster} alt={details[0]?.Title + "'s poster"} width='120px' height='100%' />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">

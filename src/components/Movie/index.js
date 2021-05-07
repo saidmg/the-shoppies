@@ -16,7 +16,7 @@ Results:
         <div className={`card addShadow rounded  ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'selection-effect' : nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? '' : 'nomin2'}`} style={{ width: '214px', minHeight: '450px', margin: 'auto', marginTop: '5%', marginBottom: '5%' }}>
             <img src={movie.Poster === "N/A" ?
                 'https://user-images.githubusercontent.com/71358869/116933814-14120680-ac32-11eb-8136-6ce8c7c4be1d.png'
-                : movie.Poster} className={`card-img-top rounded h-auto ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'nomin' : ''}`} alt="..." />
+                : movie.Poster} className={`card-img-top rounded h-auto ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'nomin' : ''}`} width="100%" height="100%" alt={movie.Title+"'s poster"} />
             <div className="card-body text-center">
                 <h5 className="card-title">{movie.Title}</h5>
                 {movie.Title.length <= 20 ? <br></br> : null}
