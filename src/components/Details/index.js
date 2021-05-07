@@ -20,7 +20,7 @@ export default function Details({details}) {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <p className="card-text" style={{ fontWeight: 'bolder' }}>{details[0]?.Plot}</p>
+                                <p className="card-text fw-bolder">{details[0]?.Plot}</p>
                             </div>
                         </div>
                     </div>

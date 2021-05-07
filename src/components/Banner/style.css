@@ -1,0 +1,12 @@
+.background{
+    color:white;
+    height:500px;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size: cover
+}
+.btn-close{
+    background-color: white;
+    border-color: white;
+
+}

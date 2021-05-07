@@ -1,8 +1,8 @@
 
 export default function Footer() {
     return (
-        <div style={{ borderTop: '1px solid black', textAlign: 'center' }}>
+        <div className="border-top border-1 border-dark text-center">
 
-        <h6 className="mt-2">Shoppies ©2021 Created by <a href="https://portfolio-said.herokuapp.com/" target="_blank" style={{color:'black'}}>Said Mghabghab</a></h6>
+        <h6 className="mt-2">Shoppies ©2021 Created by <a className="text-dark" href="https://portfolio-said.herokuapp.com/" target="_blank">Said Mghabghab</a></h6>
      </div>    );
   }

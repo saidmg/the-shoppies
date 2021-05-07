@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import Skeleton from 'react-loading-skeleton';
+import "./style.css";
 
 
 export default function Banner() {
@@ -14,13 +15,12 @@ export default function Banner() {
   {/* <!-- Modal --> */}
   <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
-      <div className="modal-content" style={{color:'white',height:'500px',backgroundImage:'url(./movieAward.jpg)',backgroundRepeat:'no-repeat',backgroundPosition: '50% 50%',backgroundSize:'cover'
-}}>
+      <div className="modal-content background" style={{backgroundImage:'url(./movieAward.jpg)'}}>
           <div className="modal-header">
               <h5 className="modal-title" id="staticBackdropLabel">Good Luck!</h5>
-              <button onClick={goTop}  type="button" className="btn-sm btn-close " data-bs-dismiss="modal" aria-label="Close" style={{color:'white'}}></button>
+              <button onClick={goTop}  type="button" className="btn-sm btn-close text-white " data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div className="modal-body" style={{textAlign:'center'}}>
+          <div className="modal-body text-center">
               <p>You have successfully selected your 5 nominees!  </p> 
               <p>You can still check the movies details or edit the nomination list.</p>
               <h4>Thank you for your participation!</h4></div>

@@ -1,0 +1,25 @@
+.fit-content{
+    width: fit-content;
+}
+.layout{
+    width: 120px;
+    height: 180px
+}
+.opacity-added{
+    opacity: 40%
+}
+.positioning{
+    margin-left:-20%;
+    margin-top:153%;
+    width:140%
+}
+.back-styling{
+    width: 120px;
+    height: 180px;
+    box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.9)
+}
+.position-settings{
+    position: absolute ;
+    right: 5%;
+    top: 5%
+}

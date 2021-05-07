@@ -7,17 +7,17 @@ export default function Movie({search, nomination, addToNomination}) {
 
   return (
 <>
-<h3 style={{ color: 'black' }}>
+<h3 className="text=dark">
 Results:
 </h3>
 <div className='row justify-content-center'>
 {search?.length > 1 ? search.map(movie =>
     <div  key={movie.imdbID} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-        <div className={`card addShadow rounded  ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'tryings' : nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? '' : 'nomin2'}`} style={{ width: '214px', minHeight: '450px', margin: 'auto', marginTop: '5%', marginBottom: '5%' }}>
+        <div className={`card addShadow rounded  ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'selection-effect' : nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? '' : 'nomin2'}`} style={{ width: '214px', minHeight: '450px', margin: 'auto', marginTop: '5%', marginBottom: '5%' }}>
             <img src={movie.Poster === "N/A" ?
                 'https://user-images.githubusercontent.com/71358869/116933814-14120680-ac32-11eb-8136-6ce8c7c4be1d.png'
-                : movie.Poster} className={`card-img-top rounded ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'nomin' : ''}`} alt="..." style={{ height: 'auto' }} />
-            <div className="card-body" style={{ textAlign: 'center' }}>
+                : movie.Poster} className={`card-img-top rounded h-auto ${nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0 ? 'nomin' : ''}`} alt="..." />
+            <div className="card-body text-center">
                 <h5 className="card-title">{movie.Title}</h5>
                 {movie.Title.length <= 20 ? <br></br> : null}
                 <p className="card-text">{movie.Year}</p>
