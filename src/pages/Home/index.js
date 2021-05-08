@@ -67,7 +67,6 @@ export default function Home() {
 
     return (
         <>
-            <Header />
 
             <div className="container mt-4" style={{ minHeight: '80vh' }}>
 
@@ -99,7 +98,6 @@ export default function Home() {
             </div>
 
             <Banner />
-            <Footer />
         </>
     )
 }
