@@ -47,7 +47,7 @@ export default function Home() {
 
     async function addToNomination(event) {
         let id = event.target.id
-        let searchResult = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=100ee64f`).then(r => r.json())
+        let searchResult = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=100ee64f`).then(r => r.json())
         let result1 = [...nomination]
         for (let i = 0; i < 5; i++) {
             if (result1[i] === false) {
