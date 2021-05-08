@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import "./style.css";
 
 import API from "../../utils/API";
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import Nomination from '../../components/Nomination';
 import Movie from '../../components/Movie';
 import Details from '../../components/Details';
@@ -12,7 +10,7 @@ import Banner from '../../components/Banner';
 export default function Home() {
 
     const [search, setSearch] = useState([]);
-    const [details, setDetails] = useState({});
+    const [details, setDetails] = useState([]);
     const [nomination, setNomination] = useState([false, false, false, false, false]);
 
     useEffect(() => {
