@@ -113,7 +113,7 @@ Once 5 movies are selected, a modal will be prompt informing the user that the s
 once a movie is selected , it cannot be selected again. And once 5 movies are selected, no more movies can be selected unless previous movies were removed.
 If the user leaves the page and wish to come back, the previously selected movies will be stored in the local storage and shown for the user.
 
-* screenshots : 
+### screenshots : 
 
 ![Movie Nomination](https://user-images.githubusercontent.com/71358869/117549802-696f5e80-b00a-11eb-826a-d03851f84f76.JPG)
 ![Movie Details](https://user-images.githubusercontent.com/71358869/117549811-6ffdd600-b00a-11eb-9363-6a2dbd263a68.JPG)
