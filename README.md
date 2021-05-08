@@ -86,24 +86,17 @@ Create shareable links
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-   ```sh
+Clone the repository
+ ```sh
    git clone https://github.com/saidmg/the-shoppies.git
    ```
-2. Install NPM packages
+
+### Installation
+  
+Install NPM packages
    ```sh
    npm install
    ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -112,8 +105,19 @@ After installtion completed, use the following commander to start react app:
 ```sh
 npm start
 ```
+When the application starts, use the search input to select the 5 movies for nomination.
+When you select a movie , it will be shown in the nomination list , with 2 options : 
+    -Remove the move nomination.
+    -Check the details for the selected movie.
+Once 5 movies are selected, a modal will be prompt informing the user that the selections are completed.
+once a movie is selected , it cannot be selected again. And once 5 movies are selected, no more movies can be selected unless previous movies were removed.
+If the user leaves the page and wish to come back, the previously selected movies will be stored in the local storage and shown for the user.
 
+* screenshots : 
 
+![Movie Nomination](https://user-images.githubusercontent.com/71358869/117549802-696f5e80-b00a-11eb-826a-d03851f84f76.JPG)
+![Movie Details](https://user-images.githubusercontent.com/71358869/117549811-6ffdd600-b00a-11eb-9363-6a2dbd263a68.JPG)
+![Nomination completed](https://user-images.githubusercontent.com/71358869/117549817-7ab86b00-b00a-11eb-8103-5d2ce3116f13.JPG)
 
 <!-- LICENSE -->
 ## License
