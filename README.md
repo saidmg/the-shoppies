@@ -26,7 +26,7 @@ UX Developer Intern &amp; Web Developer Intern Challenge - Fall 2021
     </li>
     <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#screenshtots">Screenshots</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
       </ul>
     </li>
     <li><a href="#links">Links</a></li>
