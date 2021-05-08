@@ -132,7 +132,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <!-- CONTACT -->
 ## Contact
 
-Said Mghabghab - [Linkedin](https://www.linkedin.com/in/said-mghabghab/) - saidmghabghab@gmail.com
+* Said Mghabghab - [Linkedin](https://www.linkedin.com/in/said-mghabghab/) - saidmghabghab@gmail.com
 
 * Project Link: [https://github.com/saidmg/the-shoppies](https://github.com/saidmg/the-shoppies)
 * Deployed Link: https://your-nominations.herokuapp.com/
