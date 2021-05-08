@@ -25,6 +25,7 @@ UX Developer Intern &amp; Web Developer Intern Challenge - Fall 2021
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#links">Links</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -119,6 +120,11 @@ If the user leaves the page and wish to come back, the previously selected movie
 ![Movie Details](https://user-images.githubusercontent.com/71358869/117549811-6ffdd600-b00a-11eb-9363-6a2dbd263a68.JPG)
 ![Nomination completed](https://user-images.githubusercontent.com/71358869/117549817-7ab86b00-b00a-11eb-8103-5d2ce3116f13.JPG)
 
+## Links:
+
+* Project Link: [https://github.com/saidmg/the-shoppies](https://github.com/saidmg/the-shoppies)
+* Deployed Link: https://your-nominations.herokuapp.com/
+
 <!-- LICENSE -->
 ## License
 
@@ -137,9 +143,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contact
 
 * Said Mghabghab - [Linkedin](https://www.linkedin.com/in/said-mghabghab/) - saidmghabghab@gmail.com
-
-* Project Link: [https://github.com/saidmg/the-shoppies](https://github.com/saidmg/the-shoppies)
-* Deployed Link: https://your-nominations.herokuapp.com/
 
 
 <!-- ACKNOWLEDGEMENTS -->
