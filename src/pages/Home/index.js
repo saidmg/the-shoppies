@@ -38,7 +38,7 @@ export default function Home() {
     async function changeinpt(event) {
         if (event.target.value.length > 1) {
             API.searchByTitle(event.target.value.trim())
-                .then(res => (res.data.Response !== 'False') && setSearch(res.data.Search))
+                .then(res => setSearch(res.data.Search))
                 .catch(err => console.log(err));
         }
     }
