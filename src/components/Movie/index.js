@@ -28,14 +28,14 @@ export default function Movie({ search, nomination, addToNomination }) {
                                         nom === false).length === 0 ? 'Completed Selection' : 'Nominate'}`}</button>
 
                         </div>
-                    </div>) : "No results yet!"}
+                    </div>) : "No results!"}
             </div>
         </>
     )
 }
 
 Movie.propTypes = {
-    search: PropTypes.array.isRequired,
+    search: PropTypes.array,
     nomination: PropTypes.array.isRequired,
     addToNomination: PropTypes.func.isRequired,
 };
