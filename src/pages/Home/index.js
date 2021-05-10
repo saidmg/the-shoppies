@@ -12,38 +12,49 @@ export default function Home() {
     const [search, setSearch] = useState([]);
     const [details, setDetails] = useState([]);
     const [nomination, setNomination] = useState([false, false, false, false, false]);
-
+// setting the document title and getting the nomination list if the user have done it before, from the local storage 
     useEffect(() => {
         document.title = 'Omdb Nomination';
         getFromLocalStorage()
     }, []);
 
     async function getFromLocalStorage() {
+//Try get the local storage that has the key "nominations if available , and then setting it for our nomination list"
         let x = JSON.parse(localStorage.getItem('nominations'))
         x && setNomination(x)
     }
 
     function removeNominated(event) {
         let id = event.target.id
+//Get the id which is equal to the imdbID of the clicked nominated movie card and then removing 
+// it from the nomination list and updating the local storage 
         for (let i = 0; i < nomination.length; i++) {
             if (nomination[i]?.imdbID === id) {
-                let trying = [...nomination]
-                trying[i] = false
-                setNomination(trying)
-                localStorage.setItem('nominations', JSON.stringify(trying))
+                let removing = [...nomination]
+                removing[i] = false
+                setNomination(removing)
+                localStorage.setItem('nominations', JSON.stringify(removing))
             }
         }
     }
 
     async function changeinpt(event) {
+//Once the user starts typing in the search input, make an API call and get the results to show 
         if (event.target.value.length > 1) {
             API.searchByTitle(event.target.value.trim())
-                .then(res => setSearch(res.data.Search))
-                .catch(err => console.log(err));
+                .then(res => {
+                    let result = res.data.Search;
+                    //Removing the duplicate movies that sometimes the API gives us
+                    let check = new Set();
+                    let removedDuplicate= result?.filter(obj => !check.has(obj['imdbID']) && check.add(obj['imdbID']));
+                    setSearch(removedDuplicate)})
+                    .catch(err => console.log(err));
         }
     }
 
     async function addToNomination(event) {
+        // Get the imdbID of the movie selected and then get From the omdb API the details for that movie to store it in case
+        //the user wants to check it later. And then update the nomination list and the local storage.
         let id = event.target.id
         let searchResult = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=100ee64f`).then(r => r.json())
         let result1 = [...nomination]
@@ -58,6 +69,7 @@ export default function Home() {
     }
 
     async function showDetails(event) {
+        //get the imdbID of the movie selected and then get the details of the movie from the nomination list.
         let id = event.target.id
         let result = nomination.filter(movie => movie?.imdbID === id)
         setDetails(result)

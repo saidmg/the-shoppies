@@ -14,6 +14,7 @@ export default function Nomination({ nomination, showDetails, removeNominated })
                         <ReactCardFlip isFlipped={!nominated}>
                             <div className="shadow-lg" key="front">
                                 <div className="card bg-dark text-white  rounded layout">
+                                    {/* some movies have no poster. If that is the case, show a default picture */}
                                     {nominated.Poster && <img src={nominated.Poster === "N/A" ?
                                         'https://user-images.githubusercontent.com/71358869/116933814-14120680-ac32-11eb-8136-6ce8c7c4be1d.png'
                                         : nominated.Poster} className="card-img opacity-added" width="100%" height="auto" alt={nominated.Title+"'s poster"}/>}

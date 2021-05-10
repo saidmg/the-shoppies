@@ -20,6 +20,7 @@ export default function Movie({ search, nomination, addToNomination }) {
                                 <h5 className="card-title">{movie.Title}</h5>
                                 <p className="card-text">{movie.Year}</p>
                             </div>
+                            {/* Disable the button and make visual effect in case it was nominated.  In case 5 nominations were done , disable all */}
                             <button disabled={(nomination.filter(nominated => nominated?.imdbID === movie.imdbID).length > 0) || nomination.filter(
                                 nom => nom === false).length === 0} onClick={addToNomination} className="btn btn-dark " id={movie.imdbID}
                                 data-bs-toggle={`${nomination.filter(nom => nom === false).length === 1 ? 'modal' : ''}`} data-bs-target="#staticBackdrop"
@@ -33,7 +34,7 @@ export default function Movie({ search, nomination, addToNomination }) {
         </>
     )
 }
-
+//Validating the props used in this component
 Movie.propTypes = {
     search: PropTypes.array,
     nomination: PropTypes.array.isRequired,
